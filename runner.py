@@ -4,6 +4,7 @@ import logging
 import context_managers
 import decorators
 import default_value
+import descriptors
 import generators
 import parallel_processing
 import quirks
@@ -15,6 +16,7 @@ logger = logging.getLogger(__name__)
 funcs_to_run = (
     context_managers.using_context_manager,
     decorators.run_decorated,
+    descriptors.run_with_descriptor,
     default_value.run_add_value,
     generators.run_generator,
     parallel_processing.run_threading,
