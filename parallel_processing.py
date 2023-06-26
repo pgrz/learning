@@ -6,6 +6,11 @@ from functools import partial
 logger = logging.getLogger(__name__)
 
 
+# TODO: Add condition-wait-notify
+# TODO: Add async/await
+# TODO: Add multiprocessing
+
+
 def countdown(num):
     for i in range(num, 0, -1):
         logger.info("%d", i)

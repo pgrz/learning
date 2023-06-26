@@ -5,6 +5,9 @@ from operator import add
 logger = logging.getLogger(__name__)
 
 
+# TODO: Add generator send example
+
+
 def generate_divisable_by_3_or_7(n):
     logger.info("Creating a generator for %d", n)
     num = 1
