@@ -19,6 +19,7 @@ funcs_to_run = (
     generators.run_generator,
     parallel_processing.run_threading,
     quirks.assign_and_modify_in_tuple,
+    quirks.dict_with_tuple_keys,
     quirks.sorted_returns_a_list,
 )
 
