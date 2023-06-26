@@ -1,5 +1,6 @@
 import logging
 import time
+from functools import wraps
 from typing import Callable
 
 logger = logging.getLogger(__name__)
@@ -7,6 +8,7 @@ logger = logging.getLogger(__name__)
 
 def arg_decorator(character):
     def _arg_decorator(func: Callable) -> Callable:
+        @wraps(func)
         def _wrapped_func(*args, **kwargs):
             start_time = time.time()
 

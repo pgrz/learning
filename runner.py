@@ -5,6 +5,7 @@ import context_managers
 import decorators
 import default_value
 import generators
+import parallel_processing
 import quirks
 
 logging.basicConfig(level=logging.DEBUG)
@@ -16,6 +17,7 @@ funcs_to_run = (
     decorators.run_decorated,
     default_value.run_add_value,
     generators.run_generator,
+    parallel_processing.run_threading,
     quirks.assign_and_modify_in_tuple,
     quirks.sorted_returns_a_list,
 )
