@@ -7,6 +7,7 @@ class DirectoryNameLength:
     def __get__(self, obj, objtype=None):
         return len(obj.name)
 
+
 class Directory:
     def __init__(self, name: str):
         self.name = name
@@ -25,8 +26,11 @@ class Person:
 
     name_length = DirectoryNameLength()
 
+
 def run_with_descriptor():
     directory = Directory(name="asdf")
-    logger.info("Directory %s has a name length of %d", directory, directory.name_length)
+    logger.info(
+        "Directory %s has a name length of %d", directory, directory.name_length
+    )
     person = Person(first_name="Bill", last_name="Cosby")
     logger.info("Person %s has a name length of %d", person, person.name_length)

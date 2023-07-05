@@ -17,8 +17,7 @@ def assign_and_modify_in_tuple():
 
 
 def dict_with_tuple_keys():
-
-    t1 = (1,2)
+    t1 = (1, 2)
     logger.info("Tuple %s can be a dict key", t1)
 
     d1 = {t1: 1}
@@ -32,6 +31,7 @@ def dict_with_tuple_keys():
         d2 = {t2: 2}
     except TypeError as e:
         logger.error("Exception occurred: %s", e)
+
 
 def sorted_returns_a_list():
     t = (2, 1, 3)
