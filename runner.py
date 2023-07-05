@@ -8,6 +8,8 @@ import descriptors
 import generators
 import parallel_processing
 import quirks
+import slots
+
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -23,6 +25,7 @@ funcs_to_run = (
     quirks.assign_and_modify_in_tuple,
     quirks.dict_with_tuple_keys,
     quirks.sorted_returns_a_list,
+    slots.run_with_slots,
 )
 
 if __name__ == "__main__":
