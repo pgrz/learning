@@ -10,7 +10,6 @@
 
 import logging
 
-
 # Log level is set to ERROR to disable logging
 logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger()
