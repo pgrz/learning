@@ -44,11 +44,10 @@ def _build_mud_wall(gap_size: int, left_height: int, right_height: int) -> int:
 
     max_heights = (left_height + size_increment, right_height + size_increment)
 
-    logger.debug(
-        "Max heights: %s; size_increment: %d", max_heights, size_increment
-    )
+    logger.debug("Max heights: %s; size_increment: %d", max_heights, size_increment)
 
     return min(max_heights)
+
 
 def maxHeight(wallPositions: list[int], wallHeights: list[int]) -> int:
     # Write your code here
